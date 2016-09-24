@@ -1,2 +1,2 @@
 #!/bin/bash
-python q2.py
+python q2.py $1
