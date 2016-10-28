@@ -145,7 +145,7 @@ def generating_valid(Validset,ValidLabel):
 # set training condition
 learning_rate = 0.01 
 # reg = 10
-epoch = 2500
+epoch = 3000
 
 # previous trained information loaded 
 if ("history.csv" in csv_files):
