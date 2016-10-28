@@ -225,7 +225,7 @@ print "preprocess done"
 def _Jungle():
 	manytrees = []
 	jungle = []
-	for i in range(NUMBER_OF_TREES-8):
+	for i in range(NUMBER_OF_TREES):
 		print "Build tree %s" % i
 		size = len(train)*2 / 3
 		training_sample = random.sample(train, size)
