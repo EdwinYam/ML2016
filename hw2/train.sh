@@ -1,2 +1,2 @@
 #!/bin/bash
-python regression_adagrad.py $1 $2
+python myjungle.py $1 $2
