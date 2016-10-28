@@ -29,7 +29,6 @@ csvtest = csv_read(flag,testname)
 m = len(csvtest)
 n = len(csvtest[0])
 csvtest = [ [float(csvtest[x][y]) for y in xrange(start,n) ] for x in xrange(m) ]
-_,testNorm = data_normalization(csvtest)
 test_number = len(csvtest)
 
 data_feature = 57
