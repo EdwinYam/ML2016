@@ -1,2 +1,2 @@
 #!/bin/bash
-python load_jungle.py $1 $2 $3
+python load.py $1 $2 $3
