@@ -104,7 +104,7 @@ smooth = 0.00000005
 if (modelname in csv_files) and ("weight_adagrad.csv" in csv_files):
 	flag = 2
 	start = 0
-	weight = csv_read(flag,"weight_ada.csv")
+	weight = csv_read(flag, modelname)
 	bias = float(weight[1][0])
 	weight = [[ float(weight[y][x]) for x in xrange(data_feature) ] for y in xrange(len(weight)-1)]
 	flag = 2
