@@ -60,7 +60,6 @@ def loading_Data(path,spiltNum=400):
 	############Print out dataset information################
 	print 'X_train shape:', X_train.shape
 	print X_train.shape[0], 'train samples'
-	#######################cifar10###########################
 	print 'X_valid shape:', X_valid.shape
 	print X_valid.shape[0], 'validation samples'
 	#########################################################
