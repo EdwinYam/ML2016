@@ -29,14 +29,14 @@ def loading_Data(path,spiltNum=400):
 	print "Reshaping data to correct format"
 	trainData = np.reshape(np.array(labeledData),(totalNum,img_chns,img_rows,img_cols))
 	trainUnlabeledData = np.reshape(np.array(unlabeledData),(totalUnlabeledNum,img_chns,img_rows,img_cols))
-	testData = np.reshape(testData,(totalTestNum,channelNum,img_hei,img_wid))
+	testData = np.reshape(testData,(totalTestNum,img_chns,img_rows,img_cols))
 	trainUnlabeledData = np.append(trainUnlabeledData,testData,axis=0)
 	print "testData is used as unlabeledData!"
 	trainLabel = [ i/dataNumPerClass for i in xrange(totalNum) ]
 	if K.image_dim_ordering() == 'th':
 		print "Backend: theano"
 	else:
-    	print "Backend: tensorflow"
+		print "Backend: tensorflow"
 		trainData = np.moveaxis(np.array(trainData), 1, -1)
 		trainUnlabeledData = np.moveaxis(np.array(trainUnlabeledData), 1, -1)
 
