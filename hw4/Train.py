@@ -26,7 +26,7 @@ f.close()
 with open(dataPath + 'docs.txt', 'r') as f:
 	docs_TXT = f.read()
 f.close()
-with open(dataPath + 'stopWords.txt', 'r') as f:
+with open('./' + 'stopWords.txt', 'r') as f:
 	stopWords = f.read()
 f.close()
 
