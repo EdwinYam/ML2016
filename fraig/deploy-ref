@@ -1,0 +1,14 @@
+tardir=fraig-ref.$1
+tarball=$tardir.tgz
+exec=fraig
+if [ ! -f $tarball ];
+then
+   echo "$tarball not found!..."
+   echo "Use \"deploy-ref <versionNumber>\" (e.g. deploy-ref 5.4.0)"
+   exit 1
+fi
+tar zxvf $tarball > /dev/null
+cd $tardir; cp -f $exec* ../ref; cd ..
+cd $tardir; cp -f libcmd* ../lib; cd ..
+rm -rf $tardir 
+echo "deployed $tarball successfully..."
